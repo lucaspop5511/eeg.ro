@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/lucaspop51/Documents/vscode/eeg.ro",
+      "program": "/Users/lucaspop51/Documents/vscode/eeg.ro/build/Debug/outDebug"
+    }
+  ]
+}
