@@ -120,7 +120,7 @@ ul.nav-links {
 }
 
 .hero-section .title {
-    font-size: clamp(30px, 10vw, 80px);
+    font-size: clamp(2.5rem, 10vw, 5rem);
     word-spacing: 100vw;
     margin-left: 5%;
     color: black;
@@ -130,7 +130,7 @@ ul.nav-links {
 .hero-section button {
     width: fit-content;
     padding: 10px;
-    margin-top: -25px;
+    margin-top: -40px;
     margin-left: 5%;
     background-color: var(--accent-color);
     border-radius: 10px;
@@ -164,7 +164,7 @@ ul.nav-links {
     backdrop-filter: blur(10px);
 }
 
-/****{ Left Side / Content }****/
+/****{ Content }****/
 
 .content-wrapper {
     margin-top: 75vh;
@@ -177,6 +177,7 @@ ul.nav-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 40px;
     width: 100%;
     height: auto;
     background-image: linear-gradient(170deg, var(--primary-color) 0%, #c2cfc6 50%, #a6afa9 100%);
@@ -184,6 +185,13 @@ ul.nav-links {
     box-sizing: border-box;
     border-top: 3px solid rgb(23, 27, 24);
     border-bottom: 3px solid rgb(23, 27, 24);
+}
+
+/****{ Left Side }****/
+
+.left {
+    margin-top: -20px;
+    margin-bottom: 50px;
 }
 
 .content-container h1 {
@@ -205,7 +213,10 @@ ul.nav-links {
 }
 
 .quick-links .element {
+    display: flex;
     flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 400px;
     min-width: 150px;
     background: linear-gradient(rgba(112, 130, 113, 0.415), rgba(157, 176, 158, 0.512));
@@ -215,27 +226,36 @@ ul.nav-links {
 }
 
 .quick-links h3 {
-    font-size: clamp(.75rem, 1.5vw, 10rem);
+    font-size: clamp(.75rem, 1.5vw, 7rem);
 }
 
 .quick-links p {
-    font-size: clamp(.5rem, 1vw, 7rem);
+    font-size: clamp(.5rem, 1vw, 5rem);
 }
 
 .quick-links button {
+    width: min-content;
     background-color: var(--accent-color);
-    font-size: clamp(.7rem, 1.25vw, 10rem);
+    font-size: clamp(.75rem, 1.25vw, 5rem);
+    border-radius: 7.5px;
+    padding: 5px;
     margin-top: 20px;
 }
 
 .content-container ul {
     list-style: none;
-    padding-left: 20px;
+    padding: 35px;
     align-self: center;
+    justify-self: center;
+}
+
+.content-container ul h4 {
+    font-size: clamp(.9rem, 1.5vw, 10rem);
 }
 
 .content-container ul li {
     position: relative;
+    font-size: clamp(.7rem, 1vw, 7rem);
     padding-left: 25px;
     margin-bottom: 10px;
 }
@@ -252,28 +272,49 @@ ul.nav-links {
 .regulation,
 .decontam {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     background-color: #ffffff4e;
     margin-top: 50px;
     border-radius: 25px;
     box-shadow:
         inset 5px 5px 5px 2px rgba(0, 0, 0, 0.3),
-        inset -5px -5px 5px 2px rgba(0, 0, 0, 0.3);
+        inset 0px -5px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 .regulation img,
 .decontam img {
-    width: 50%;
+    width: 100%;
     height: auto;
     max-width: 400px;
     max-width: auto;
     object-fit: cover;
 }
 
+.regulation img {
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.decontam img {
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
 /**{ Right Side }**/
 
 .content-container .right {
-    margin-left: 75px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    background-image: linear-gradient(170deg, var(--primary-color) 0%, #b0beb4 40%, #9da59f 100%);
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.stats {
+    width: 100%;
 }
 
 .achievements {
@@ -282,12 +323,13 @@ ul.nav-links {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 0px auto 25px auto;
-    max-width: 500px;
 }
 
-.achievements h4 {
-    margin-bottom: 0;
+.right h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #686767;
+    font-size: 1rem;
 }
 
 .achievement {
@@ -296,7 +338,7 @@ ul.nav-links {
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 150px;
+    width: 80%;
 }
 
 .achievement img {
@@ -317,16 +359,23 @@ ul.nav-links {
     margin: 5px 0 0;
 }
 
-
 /****{ Footer }****/
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     bottom: 0;
     width: 100%;
     height: 50px;
     background: linear-gradient(170deg, var(--primary-color) 0%, #c2cfc6 50%, #a6afa9 100%);
     margin-top: auto;
+}
+
+footer p {
+    font-size: small;
+    color: #535e49;
 }
 
 /**{ Menu for Phone Screens }**/
@@ -365,7 +414,7 @@ footer {
         background-color: var(--primary-color);
         backdrop-filter: blur(15px);
         border: 2px solid rgba(0, 0, 0, 0.466);
-        width: 220px;
+        width: 50%;
         border-radius: 5px;
     }
 
@@ -378,10 +427,20 @@ footer {
 
     .hamburger-menu {
         display: flex;
+        right: -10px;
     }
 
     nav {
         flex-grow: 0;
+    }
+
+    .hero-section button {
+        margin-top: -5px;
+        font-size: .75rem;
+    }
+
+    .left {
+        margin-bottom: 0;
     }
 
     .content-container {
@@ -390,7 +449,33 @@ footer {
         flex-direction: column;
     }
 
+    .content-container ul {
+        padding: 25px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .regulation,
+    .decontam {
+        flex-direction: column;
+    }
+
+    .regulation ul h4,
+    .decontam ul h4 {
+        margin-top: 5px;
+    }
+
+    .regulation img,
+    .decontam img {
+        width: 100%;
+        box-shadow: none;
+    }
+
     .content-container .right {
+        width: 90%;
         margin-left: 0;
+        margin-top: -25px;
+        background-image: none;
+        box-shadow: none;
     }
 }

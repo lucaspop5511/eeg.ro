@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
     <title>Eco Engineering Group</title>
 </head>
 
@@ -38,7 +39,7 @@
 
         <div class="hero-section">
             <h1 class="title">Eco Engineering Group</h1>
-            <button>Descarca blabla</button>
+            <button>Despre noi</button>
         </div>
 
         <div class="content-wrapper">
@@ -54,21 +55,25 @@
 
                     <div class="quick-links">
                         <div class="element">
-                            <h3>Decontaminare Soluri / Ape</h3>
-                            <p>Situri poluate istoric?
-                                <br>Poluări accidentale cu substanţe periculoase?
-                                <br>Deversări de produse petroliere?
-                            </p>
-                            <p>Avem soluţii eficiente cu costuri minime pentru astfel de probleme.</p>
-                            </p>
+                            <div>
+                                <h3>Decontaminare Soluri / Ape</h3>
+                                <p>Situri poluate istoric?
+                                    <br>Poluări accidentale cu substanţe periculoase?
+                                    <br>Deversări de produse petroliere?
+                                </p>
+                                <p>Avem soluţii eficiente cu costuri minime pentru astfel de probleme.</p>
+                            </div>
 
                             <button>Detalii</button>
                         </div>
                         <div class="element">
-                            <h3>Consultanţă de Mediu</h3>
-                            <p>V-aţi săturat să luaţi amendă la fiecare control al Gărzii de Mediu?</p>
-                            <p>Împreună putem pune la punct un sistem de management de mediu, prin care să evitaţi orice
-                                amendă în viitor.</p>
+                            <div>
+                                <h3>Consultanţă de Mediu</h3>
+                                <p>V-aţi săturat să luaţi amendă la fiecare control al Gărzii de Mediu?</p>
+                                <p>Împreună putem pune la punct un sistem de management de mediu,
+                                    prin care să evitaţi orice amendă în viitor.</p>
+                            </div>
+
                             <button>Detalii</button>
                         </div>
                     </div>
@@ -100,23 +105,49 @@
 
                 </section>
                 <section class="right">
-                    <div class="achievements">
+                    <div class="stats">
                         <h4>Lucrari de mediu finalizate</h4>
-                        <div class="achievement">
-                            <img src="assets/shovel.png" alt="Icon 1">
-                            <h2>35.000+ MC</h2>
-                            <p>Volum sol decontaminat</p>
+                        <div class="achievements">
+                            <div class="achievement">
+                                <img src="assets/shovel.png" alt="Icon 1">
+                                <h2>35.000+ MC</h2>
+                                <p>Volum sol decontaminat</p>
+                            </div>
+                            <div class="achievement">
+                                <img src="assets/water.png" alt="Icon 2">
+                                <h2>55.000+ MC</h2>
+                                <p>Volum ape tratate</p>
+                            </div>
+                            <div class="achievement">
+                                <img src="assets/hand.png" alt="Icon 3">
+                                <h2>8+ Hectare</h2>
+                                <p>Suprafata totala situri remediate</p>
+                            </div>
                         </div>
-                        <div class="achievement">
-                            <img src="assets/water.png" alt="Icon 2">
-                            <h2>55.000+ MC</h2>
-                            <p>Volum ape tratate</p>
+                    </div>
+
+                    <div class="form">
+                        <div class="title">Ghidul cerintelor legale de mediu pentru o firma romaneasca</div>
+
+                        <div class="input-container ic1">
+                            <input id="firstname" class="input" type="text" placeholder=" " />
+                            <div class="cut"></div>
+                            <label for="firstname" class="placeholder">Nume</label>
                         </div>
-                        <div class="achievement">
-                            <img src="assets/hand.png" alt="Icon 3">
-                            <h2>8+ Hectare</h2>
-                            <p>Suprafata totala situri remediate</p>
+                        <div class="input-container ic2">
+                            <input id="lastname" class="input" type="text" placeholder=" " />
+                            <div class="cut"></div>
+                            <label for="lastname" class="placeholder">Prenume</label>
                         </div>
+                        <div class="input-container ic2">
+                            <input id="email" class="input" type="text" placeholder=" " />
+                            <div class="cut cut-short"></div>
+                            <label for="email" class="placeholder">Email</label>
+                        </div>
+
+                        <div class="subtitle">Include calendarul raportarilor de mediu si stadiul conformarii</div>
+
+                        <button type="text" class="submit">Descarca GRATUIT</button>
                     </div>
                 </section>
 
@@ -133,8 +164,7 @@
     </section>
 
     <footer>
-        copyright blabla<br>
-        da
+        <p>Copyright © 2013 EEG - Eco Engineering Group</p>
     </footer>
 
     <script src="script.js"></script>
