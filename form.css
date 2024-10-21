@@ -19,11 +19,12 @@
 }
 
 .form .title {
-    color: #4b3f2f;
+    color: #f4e2cb;
     font-family: 'Georgia', serif;
     font-size: clamp(1rem, .7vw, 1.5rem);
     font-weight: bold;
     text-align: center;
+    padding: 10px;
     margin-top: 20px;
 }
 
