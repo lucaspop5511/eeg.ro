@@ -31,6 +31,7 @@ header {
     padding: 0px 20px 0 5px;
     font-weight: bold;
     background-color: #d2e8d94a;
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     color: var(--text-color);
     z-index: 20;
@@ -41,6 +42,7 @@ header {
 
 header.scrolled {
     background-color: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
 
@@ -146,12 +148,14 @@ ul.nav-links {
     top: 75%;
     height: 15px;
     background: linear-gradient(190deg#bdd4c357, #9fbaa55f);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
 
 #sep2 {
     height: 25px;
     background: linear-gradient(190deg#bdd4c357, #9fbaa55f);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
 
@@ -404,6 +408,7 @@ footer p {
         top: 75px;
         right: 40px;
         background-color: var(--primary-color);
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(15px);
         border: 2px solid rgba(0, 0, 0, 0.466);
         width: 50%;
