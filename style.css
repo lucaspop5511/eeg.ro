@@ -125,6 +125,9 @@ ul.nav-links {
     margin-top: -40px;
     margin-left: 5%;
     background-color: var(--accent-color);
+    color: #191c1f;
+    border: black solid 1px;
+    border-radius: 7.5px;
     border-radius: 10px;
     transition: all .1s ease;
 }
@@ -220,17 +223,19 @@ ul.nav-links {
 }
 
 .quick-links h3 {
-    font-size: clamp(.75rem, 1.5vw, 7rem);
+    font-size: clamp(.8rem, 1.5vw, 7rem);
 }
 
 .quick-links p {
-    font-size: clamp(.5rem, 1vw, 5rem);
+    font-size: clamp(.65rem, 1.2vw, 5rem);
 }
 
 .quick-links button {
     width: min-content;
     background-color: var(--accent-color);
     font-size: clamp(.75rem, 1.25vw, 5rem);
+    color: #191c1f;
+    border: black solid 1px;
     border-radius: 7.5px;
     padding: 5px;
     margin-top: 20px;
@@ -437,7 +442,9 @@ footer p {
     .hero-section {
         position: absolute;
         display: block;
-        transform: translateY(15%);
+        transform: translateY(20%);
+        word-spacing: 100vw;
+        text-align: center;
     }
 
     .hero-section button {
